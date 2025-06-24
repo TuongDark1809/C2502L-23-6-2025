@@ -1,0 +1,227 @@
+* {
+    color: black;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(Fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(Fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-VariableFont;
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.info-list{
+    display: flex;
+    flex-direction: row;
+    padding-top: 64px;
+    padding-right: 120px;
+    padding-bottom: 64px;
+    padding-left: 120px;
+}
+
+.info-box{
+    background-color: white;
+    width: 232px;
+    height: 209px;
+    margin-right: 100px;
+}
+
+.info-box-logo{
+    width: 64px;
+    height: 64px;
+    padding-left: 84px;
+    padding-right: 84px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.info-box-header{
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 120%;
+    height: 29px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.info-box-text{
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 150%;
+    text-align: center;
+}
+
+.table{
+    border-radius: 12px;
+    border: 2px solid #f6f6f6;
+    margin-left: 50px;
+    margin-right: 125px;
+    display: flex;
+    flex-direction: row;
+}
+
+.platform-list{
+    border-right: 2px solid #f6f6f6;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+}
+
+.platform-header{
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    font-size: 1.3rem;
+}
+
+.platform-items{
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.note-and-others{
+    display: flex;
+    flex-direction: row;
+    padding-top: 68px;
+}
+
+.note {
+    padding-left: 32px;
+    padding-right: 465px;
+}
+
+.note-header {
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    font-size: 1.3rem;
+}
+
+.note-text {
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 1rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-right: 32px;
+}
+
+.contacts p{
+    text-align: right;
+}
+
+.contacts-quote {
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    width: 203px;
+    margin-bottom: 0px;
+    margin-left: 22px;
+}
+
+.contacts-email {
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.contacts-logos {
+    margin-top: 125px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.contacts-logos img{
+    cursor: pointer;
+}
+
+.copyrights-and-policies {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    gap: 40px;
+}
+
+.copyrights {
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.policy-and-terms{
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 0.8rem;
+    color: #9D9D9E;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .info-list{
+        display: grid;
+        grid-template-areas:
+        'item1 item2'
+        'item3 item4'
+        ;
+        grid-template-columns: 232px 232px;
+        gap: 60px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 40px;
+    }
+    .item1{
+        grid-area: item1;
+    }
+    .item2{
+        grid-area: item2;
+    }
+    .item3{
+        grid-area: item3;
+    }
+    .item4{
+        grid-area: item4;
+    }
+    .table{
+        margin-left: 0;
+        width: 560px;
+    } 
+    .platform-list{
+        padding-top: 30px;
+    }
+    .note-and-others{
+        display: flex;
+        flex-direction: column;
+        width: 402px;
+        padding-top: 34px;
+    }
+    .note{
+        width: 362px;
+        padding-left: 20px;
+    }
+    .contacts-logos{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .copyrights-and-policies{
+        margin-left: 25px;
+    }
+}
+
+

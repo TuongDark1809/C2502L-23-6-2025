@@ -1,0 +1,188 @@
+* {
+    color: black;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(Fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(Fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-VariableFont;
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.product-preview {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.product-preview-text p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.product-preview-text-1 {
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    font-size: 1.5rem;
+}
+
+.product-preview-text-2 {
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 0.85rem;
+}
+
+.product-preview-button button {
+    border-radius: 12px;
+    border-color: black;
+    border-width: 2px;
+    width: 112px;
+    height: 48px;
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    cursor: pointer;
+}
+
+.product-preview-button {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.product {
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border: 2px solid #f6f6f6;
+    border-radius: 12px;
+    margin-right: 45px;
+}
+
+.product-img {
+    width: 272px;
+    height: 300px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+.product-img img{
+    border-radius: 12px;
+}
+
+.product-author {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-author img {
+    padding-left: 14px;
+    padding-top: 14px;
+    cursor: pointer;
+}
+
+.author-name {
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-left: 14px;
+    cursor: pointer;
+}
+
+.product-name {
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    font-size: 1.1rem;
+    padding-left: 14px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.product-description {
+    font-family: Montserrat-Medium, Montserrat-VariableFont;
+    font-size: 0.7rem;
+    padding-left: 14px;
+    margin-top: 5px;
+}
+
+.product-info button {
+    border-radius: 12px;
+    border-color: black;
+    border-width: 2px;
+    font-family: Montserrat-Bold, Montserrat-VariableFont;
+    cursor: pointer;
+    margin-left: 14px;
+    margin-right: 14px;
+    width: 272px;
+    height: 48px;
+}
+
+@media screen and (max-width: 600px) {
+    .product-preview{
+        margin-left: 30px;
+    }
+    .product-preview-button{
+        margin-top: 30px;
+    }
+    .product-list{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 20px;
+    }
+    .product{
+        display: grid;
+        grid-template-areas:
+        'image author'
+        'none info'
+        ;
+        grid-template-rows: 50px 278px;
+        row-gap: 10px;
+        height: 328px;
+        width: 500px;
+    }
+    .product-author img{
+        width: 40px;
+        height: 40px;
+        padding-left: 0;
+    }
+    .product-img{
+        grid-area: image;
+        grid-row: 1/ span 2;
+    }
+    .product-author{
+        grid-area: author;
+        height: 50px;
+    }
+    .product-info{
+        grid-area: info;
+    }
+    .product-info p{
+        padding-left: 0;
+    }
+    .product-name{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .product-info button{
+        margin-left: 0;
+        margin-top: 20px;
+        width: 185px;
+        height: 60px;
+    }
+}

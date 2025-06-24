@@ -1,0 +1,127 @@
+* {
+  color: black;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(Fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(Fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-VariableFont;
+  src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+.Text {
+  margin-left: 64px;
+  margin-top: 90px;
+  width: 350px;
+}
+
+.home-introduction-text-1 {
+  font-family: Montserrat-Bold, Montserrat-VariableFont;
+  font-size: 2rem;
+}
+
+.home-introduction-text-2 {
+  font-family: Montserrat-Medium, Montserrat-VariableFont;
+  font-size: 1rem;
+}
+
+.home-introduction {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.home-introduction-info{
+  width: 375px;
+  margin-top: 150px;
+}
+
+.home-introduction-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.images-slidebar{
+  display: flex;
+  flex-direction: row;
+}
+
+.get_started button {
+  border-radius: 12px;
+  width: 175px;
+  height: 48px;
+  font-family: Montserrat-Bold, Montserrat-VariableFont;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.learn_more button {
+  border-radius: 12px;
+  border-color: black;
+  border-width: 2px;
+  width: 112px;
+  height: 48px;
+  font-family: Montserrat-Bold, Montserrat-VariableFont;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.home-introduction img{
+  width: 950px;
+  height: 580px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.images-slidebar-1{
+  background-color: rgb(192, 183, 183);
+  border-radius: 12px;
+  height: 10px;
+  width: 150px;
+  margin-right: 30px;
+}
+
+.images-slidebar-2{
+  background-color: black;
+  border-radius: 12px;
+  height: 10px;
+  width: 112.5px;
+}
+
+@media screen and (max-width: 600px){
+  .home-introduction{
+    display: grid;
+    grid-template-areas: 
+    'picture'
+    'text'
+    ;
+    margin-left: 0px;
+    gap:0;
+  }
+  .home-introduction-image img{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+  .home-introduction-image{
+    grid-area: picture;
+  }
+  .home-introduction-info{
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
